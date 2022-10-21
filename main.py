@@ -1,6 +1,7 @@
-import csv 
+import numpy as np
+import pandas as pd
 
-with open('winequality-red.csv') as csvfile: 
-    reader = csv.reader(csvfile, delimiter=' ');
-    for row in reader: 
-        print(', '.join(row))
+path = 'winequality-red.csv';
+s = pd.read_csv(path, sep=';')
+
+print(s)
