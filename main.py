@@ -31,3 +31,5 @@ def column_attributes(data):
 
         list_of_columns.append(column)
     return pd.DataFrame(list_of_columns)
+
+print(column_attributes(data))
